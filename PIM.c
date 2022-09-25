@@ -14,7 +14,7 @@ void lista();    // função de lista
  int main(void){ // aqui é criada a função principal do programa 
      do{
        system("cls");
-       printf("\n****Menu****\n1 - Cadastrar\n2 - Pesquisar\n3 - Lista\n9 - Sair\n");
+       printf("\n----Menu----\n1 - Cadastrar\n2 - Pesquisar\n3 - Lista\n9 - Sair\n");
        scanf("%d", &op);
        switch (op){
         case 1:
@@ -45,7 +45,7 @@ scanf("%s", &email[linha]); // aloca os dados digitados no endereço email
 printf("\nDigite o CPF sem ponto: "); // Imprime na tela a solicitação de cadastro do cpf
 scanf("%d", &cpf[linha]); //aloca os dados digitados no endereço cpf
 printf("\nDigite 1 para continuar ou outro valor para sair: "); // da condição para escolher finalizar o loop ou cadastrar mais dados
-scanf(" %d", &op);// lê a opção digitada
+scanf("%d", &op);// lê a opção digitada
 linha++; // da continuidade a chamada para ser armazenada na proxima linha
 }while(op ==1); // fim do loop
 } // fim da declaração da função cadastro
